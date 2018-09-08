@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.cryptobrewery.link.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="received messages"
+        android:id="@+id/msgflow" />
+
+    <Button
+        android:id="@+id/SenderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/msgflow"
+        android:layout_toStartOf="@+id/msgflow"
+        android:text="I am Sender" />
+
+    <Button
+        android:id="@+id/ReceiverBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SenderBtn"
+        android:layout_alignBottom="@+id/SenderBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="I AM RECEIVER" />
+
+    <EditText
+        android:id="@+id/tunnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgflow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
